@@ -1,0 +1,13 @@
+1) A small ruby module that has methods I mixing for working with LinkedIn API via OAuth
+
+2) I am working on a spec that will use firewatir to test all the methods provided by this module. To test the work in progress testcase:
+   2.1) Set the values for LINKEDIN_API_KEY and SECRET_KEY in the file spec/linkedin_oauth_spec.rb
+   2.2) ruby -I./lib/ spec/linkedin_oauth_spec.rb
+   
+   TODO:
+   1) use firewatir to spawn a new browser window that opens the authorize url. 
+   2) implement a quick server that can handle the redirect with the oauth_verfier and oauth_token
+   Esstentially implmenting these two will enable to the test case to use all the methods from the module and make a complete api call to linkedin.
+
+
+
